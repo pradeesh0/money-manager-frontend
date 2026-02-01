@@ -5,7 +5,7 @@ import axios from "axios";
 // });
 
 const API = axios.create({
-  baseURL: "https://money-manager-backend-1-gw0k.onrender.com/api", 
+  baseURL: process.env.REACT_APP_API_URL, 
 });
 
 export const getTransactions = (params) =>
