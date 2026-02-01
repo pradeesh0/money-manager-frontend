@@ -1,7 +1,11 @@
 import axios from "axios";
 
+// const API = axios.create({
+//   baseURL: "http://localhost:9090/api", 
+// });
+
 const API = axios.create({
-  baseURL: "http://localhost:9090/api", 
+  baseURL: "https://money-manager-backend-1-gw0k.onrender.com/api", 
 });
 
 export const getTransactions = (params) =>
