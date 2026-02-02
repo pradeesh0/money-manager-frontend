@@ -9,19 +9,19 @@ const API = axios.create({
 });
 
 export const getTransactions = (params) =>
-  API.get("/transactions", { params });
+  API.get("api/transactions", { params });
 
 export const getFiltered = (params) =>
-  API.get("/transactions/filter", { params });
+  API.get("api/transactions/filter", { params });
 
 export const getBetween = (params) =>
-  API.get("/transactions/between", { params });
+  API.get("api/transactions/between", { params });
 
 export const getSummary = (params) =>
-  API.get("/transactions/summary", { params });
+  API.get("api/transactions/summary", { params });
 
 export const addTransaction = (data) =>
-  API.post("/transactions", data);
+  API.post("api/transactions", data);
 
 export const updateTransaction = (id, data) =>
-  API.put(`/transactions/${id}`, data);
+  API.put(`api/transactions/${id}`, data);
