@@ -94,7 +94,16 @@ export default function Home() {
 
   useEffect(() => {
     fetchData();
-  }, [filters, page]);
+  }, [fetchData]);
+
+  // const handlePeriodChange = (period) => {
+  //   setFilters((prev) => ({
+  //     ...prev,
+  //     period,
+  //     from: "",
+  //     to: "",
+  //   }));
+  // };
 
   const summary = {
     income: data.filter((d) => d.type === "INCOME").reduce((a, b) => a + b.amount, 0),
